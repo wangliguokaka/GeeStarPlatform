@@ -1,9 +1,0 @@
-F:\File\GeeStarPlatform\CaptureTool\bin\Debug\CaptureTool.dll
-F:\File\GeeStarPlatform\CaptureTool\bin\Debug\CaptureTool.pdb
-F:\File\GeeStarPlatform\CaptureTool\bin\Debug\CaptureImageTool.dll
-F:\File\GeeStarPlatform\CaptureTool\bin\Debug\CaptureImageTool.pdb
-F:\File\GeeStarPlatform\CaptureTool\obj\Debug\CaptureTool.csprojResolveAssemblyReference.cache
-F:\File\GeeStarPlatform\CaptureTool\obj\Debug\CaptureTool.dll
-F:\File\GeeStarPlatform\CaptureTool\obj\Debug\CaptureTool.pdb
-F:\File\GeeStarPlatform\CaptureTool\bin\Debug\CaptureTool.tlb
-E:\GeeStarPlatform\CaptureTool\bin\Debug\CaptureTool.dll

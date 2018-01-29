@@ -1,9 +1,0 @@
-C:\Users\sagi\Documents\Visual Studio 2012\Projects\ActiveXDemo\MyCsActiveXControl\bin\Debug\MyCsActiveXControl.dll
-C:\Users\sagi\Documents\Visual Studio 2012\Projects\ActiveXDemo\MyCsActiveXControl\bin\Debug\MyCsActiveXControl.pdb
-C:\Users\sagi\Documents\Visual Studio 2012\Projects\ActiveXDemo\MyCsActiveXControl\obj\Debug\MyCsActiveXControl.csproj.ResolveComReference.cache
-C:\Users\sagi\Documents\Visual Studio 2012\Projects\ActiveXDemo\MyCsActiveXControl\obj\Debug\MyCsActiveXControl.UserControl1.resources
-C:\Users\sagi\Documents\Visual Studio 2012\Projects\ActiveXDemo\MyCsActiveXControl\obj\Debug\MyCsActiveXControl.csproj.GenerateResource.Cache
-C:\Users\sagi\Documents\Visual Studio 2012\Projects\ActiveXDemo\MyCsActiveXControl\obj\Debug\MyCsActiveXControl.dll
-C:\Users\sagi\Documents\Visual Studio 2012\Projects\ActiveXDemo\MyCsActiveXControl\obj\Debug\MyCsActiveXControl.pdb
-C:\Users\sagi\Documents\Visual Studio 2012\Projects\ActiveXDemo\MyCsActiveXControl\bin\Debug\MyCsActiveXControl.tlb
-C:\Users\sagi\Documents\Visual Studio 2012\Projects\ActiveXDemo\MyCsActiveXControl\obj\Debug\MyCsActiveXControl.csprojResolveAssemblyReference.cache
