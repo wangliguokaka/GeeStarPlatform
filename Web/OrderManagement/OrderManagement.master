@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/OrderManagement/GeeStarMenue.master" AutoEventWireup="true"
+    CodeFile="OrderManagement.master.cs" Inherits="GeeStar_OrderManagement" %>
+
+<%@ Register src="../ascx/LeftMenu.ascx" tagname="LeftMenu" tagprefix="uc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <style type="text/css" media="screen">
+
+        body {margin:0;padding:0;}
+        
+        html, body,form  { 
+            margin: 0px 0px; 
+            width: 100%; 
+            height: 100%;
+         }
+        </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <table width="100%" style="height:100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+            <tr style="vertical-align: top;">
+                <td class="lefttd">                    
+                    <uc1:LeftMenu ID="LeftMenu1" runat="server" />                    
+                </td>
+                <td style="width: 25px;">
+                </td>
+                <td style="width: 100%; height:100%;">
+                    <div class="rightbox">
+                        <div class="rightboxin">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 25px;">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</asp:Content>

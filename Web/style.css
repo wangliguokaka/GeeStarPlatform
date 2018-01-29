@@ -1,0 +1,51 @@
+@charset "gb2312";
+/* CSS Document */
+
+*{ margin:0; padding:0}
+
+*{ margin:0; padding:0}
+ img{ border:none; vertical-align:middle;  }
+ 
+body{ color:#5c5c5c; background:#efedee; overflow-x:hidden; font-size:0.8em}
+a{ text-decoration:none; color:#5c5c5c; outline:none}
+a:hover{ text-decoration:underline}
+a:active,input[type=submit],input[type=image]{star:expression(this.onFocus=this.blur());}
+:focus { outline:0; }
+.hei{ line-height:0; font-size:0}
+table{ margin:0 auto} 
+li{ list-style:none}
+textarea,input[type=text],input[type=password],input[type=password],textarea,select{}
+
+
+
+#top{ background:#0073c6; color:#fff; text-align:center; line-height:2.7em; font-size:1.5em;background:url(images/top_01.gif) repeat-x 50% 50%}
+#top img{ height:1.3em; padding-right:0.3em}
+
+#menu { font-size:1em;line-height:2.5em; height:2.5em; margin:0.5em 0.4em 0 0; }
+#menu li{ float:left;  text-align:center; width:20%}
+#menu a{ display:block; background:#fff; margin-left:0.4em}
+#menu a:hover{ text-decoration:none}
+
+#neirong ol{ background:#fff; margin:0.5em}
+
+#menu a.topC1{ color:#fff; background:#1094d5}
+
+.dis {
+DISPLAY: block
+}
+.undis {
+DISPLAY: none
+}
+
+#bottom{ background:#0073c6; color:#fff; text-align:center; line-height:3em}
+
+.tab th{ background:#319ff6; color:#fff; line-height:2em}
+.tab{ text-align:center; color:#1094d5; line-height:1.8em}
+.tab td{ border-bottom:1px solid #b7b5b5}
+.tab table{ border:0.5em solid #fff; }
+.tab table td{ width:50%}
+
+#doc{ display:block; width:100%; margin:0 1em 0 0}
+
+.right span{ color:#1094d5; font-size:1.3em; display:block; margin-bottom:0.4em}
+.names span{ color:#00CCFF;}

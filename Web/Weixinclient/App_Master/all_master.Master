@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="all_master.master.cs" Inherits="Weixin.App_Master.all_master" %>
+
+<!doctype html>
+<html>
+<head id="Head1" runat="server">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link type="text/css" rel="stylesheet" href="../css/style.css?ver=1" >
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/frozen.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/payment.js"></script>
+<script type="text/javascript" src="js/WeixinSplitPage.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
+<title><%=Session["corp"] %></title>
+<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+<style type="text/css">
+   
+    .footer-tiled  div ul{
+        display:none;
+        position:relative;
+        /*left:-40%;*/
+       
+        width:140%;
+       left:-40%;
+        border-bottom:none;
+        opacity:1;
+        background-color:white;
+
+    }
+        .footer-tiled  div ul li {
+            height: 30px;
+            border: 1px solid #ccc;
+            border-bottom: 0px;
+            width: 140%;
+            opacity:1;
+            padding-top:10px;
+             background-color:white;
+
+            
+        }
+         .footer-tiled div ul li a
+    {
+            
+             color:black;
+         text-decoration:none;
+
+    }
+    .footer-tiled .footer-reports:hover ul{
+        /*display:block;*/
+
+    }
+
+</style>
+    <script type="text/javascript">
+        $(function ()
+        { 
+            $(".footer-tiled li").bind("click", function () {
+               
+                $(".footer-tiled li:not(." + $(this).attr('class') + ")").find("ul").css("display", "none");
+
+                if($(this).attr("class") == "footer-input")
+                {
+	                $(this).find("ul").css("left","0%")
+                }
+
+                if (window.location.href.indexOf("AnalysisPie.aspx") > -1) {
+                    $(this).find("ul li").css("height", "41px")
+                }
+                else {
+                    $(this).find("ul li").css("height", "30px")
+                }
+
+                $(this).find("ul").slideToggle(10);
+            });
+        })
+       
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="viewport" >
+      <header class="header header-positive border-b">
+          <i class="icon-return" onclick="history.back()"></i>
+          <h1  runat="server" id="HTitle"></h1>
+          <div data-href="tel:<%=Session["phone"] %>" class="tel"><img src="images/tel.png" alt="" ></div>
+      </header>
+      <!--header   end-->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    <footer class="footer footer-btn">
+      <ul class="footer-tiled">
+          <%for (int i = 0; i < dt.Rows.Count; i++){ %>
+                <%if (dt.Rows[i]["MenuLevel"].ToString() == "1"){
+                        int bottompx = int.Parse(dt.Rows[i]["soncount"].ToString()) * 41;%>
+                        <%if (i > 0){%>  </ul></div></li><%} %>
+                     <li   class='<%=dt.Rows[i]["Class"].ToString() %>' <%=ControlByMenuBM(dt.Rows[i]["MenuBM"].ToString(),dt.Rows[i]["MenuLevel"].ToString(),dt.Rows[i]["LinkUrl"].ToString()) %>  ><div> <ul style="bottom:<%=bottompx%>px !important;">
+                <%} %>
+                <%if (dt.Rows[i]["MenuLevel"].ToString() == "2"){ %>
+                   
+                        <li <%=ControlByMenuBM(dt.Rows[i]["MenuBM"].ToString(),dt.Rows[i]["MenuLevel"].ToString(),dt.Rows[i]["LinkUrl"].ToString()) %>  ><a href="<%=dt.Rows[i]["LinkUrl"].ToString()%>"><%=IsCN?dt.Rows[i]["MenuNameCN"].ToString():dt.Rows[i]["MenuNameEN"].ToString()%></a></li>
+                   
+                <%} %>
+          <%} %>
+             </ul></div></li>
+      </ul>
+  </footer>
+  <!--footer   end-->
+  <div id="wrap" style="display:none;">
+      <div class="wrap">
+          <div class="order">
+              <div class="order-click" >查询订单</div>
+              <div id="order-bg"></div>
+              <div class="order-mask">
+                 <div class="order-close" >&nbsp;</div>
+                  查询待定
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="clear" ></div>
+</div>
+<!--viewport   end-->
+ <script>
+     $('.footer-tiled li,.tel,.page li').click(function () {
+         if ($(this).data('href')) {
+             location.href = $(this).data('href');
+         }
+     });
+ </script>
+    </form>
+</body>
+</html>
