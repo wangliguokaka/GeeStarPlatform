@@ -1,0 +1,54 @@
+body { background:#FFFFFF; font-size: 12px; }
+td {  font-size: 12px}
+input, textarea {  font-size: 12px; border-width:1px}
+select {  font-size: 12px; border-width:1px}
+span {  font-size: 12px; position: static }
+.hr { background:url("pic/hr.gif") }
+.inputbg { background:url("pic/inputbg.gif")}
+.quote { margin:10px; margin-left:2em; border:1px solid #CCCCCC; padding:5px;  background: #FFFFFF; font-family:Verdana,Arial,ËÎÌו; }
+
+a:link {  color: #000000;text-decoration:none}
+a:visited {  color: #000000;text-decoration:none}
+a:hover {  color: #003399}
+
+a.highlight:link { color:red; text-decoration:none }
+a.highlight:visited { color:red; text-decoration:none }
+a.highlight:hover { color:red; }
+
+a.thisclass:link { font-weight:bold; text-decoration:none }
+a.thisclass:visited { font-weight:bold; text-decoration:none }
+a.thisclass:hover { font-weight:bold; }
+
+.content { font-size: 14px; line-height:140%; margin:5px 20px }
+.aTitle { font-size: 15px;font-weight:bold; }
+
+.border { border:1px solid #ccccff}
+.title { background:url("pic/title1.gif"); }
+.title1 { background: #99ccff; background-image:url("pic/title1.gif")}
+.title2 { background: #e8f4ff; }
+.title3 { background: #D7ECFF;font-weight:bold; }
+.gray { color:gray; text-decoration:none }
+.time { color:red }
+.hit { color:green }
+.tdBg { background: #f2f8ff ; line-height:120%}
+.bg1 { background: #f2f8ff; }
+.bg2 { background: #E8F2FF; }
+.inputbg { background:url("pic/inputbg.gif")}
+
+.menuskin {
+	BORDER: #666666 1px solid; VISIBILITY: hidden; FONT: 12px Verdana;
+	POSITION: absolute; BACKGROUND-COLOR:#F6F6F6;
+	background-image:url("pic/menubg.gif");
+	}
+.menuskin A {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 25px; COLOR: black; TEXT-DECORATION: none; behavior:url(inc/noline.htc);
+	}
+#mouseoverstyle {
+	BACKGROUND-COLOR: #B6BDD2; margin:2px; padding:0px; border:#0A246A 1px solid;
+	}
+#mouseoverstyle A {
+	COLOR: black
+	}
+.menuitems {
+	margin:2px;padding:1px;word-break:keep-all;
+	}
